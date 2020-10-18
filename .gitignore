@@ -4,3 +4,7 @@ gingerbreadhouse/gingerbreadmobile/android/app/build/
 gingerbreadhouse/gingerbreadchip/GingerbreadChip/__vm/
 index.android.bundle
 **/keystores/*
+**/gradle/wrapper/*
+**/android/**/*.iml
+local.properties
+**/xcuserdata/*
