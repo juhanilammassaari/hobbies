@@ -24,5 +24,16 @@
     <ClInclude Include="src\LedConfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\LedIntensityLogic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LedIntensityLogic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LedConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
