@@ -1,0 +1,45 @@
+{
+  "scripts": {
+    "postinstall": "jetify && jetify",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "test-nocache": "jest --no-cache",
+    "build:ios": "react-native bundle --entry-file './index.js' --platform 'ios' --dev=false --bundle-output './ios/main.jsbundle' --assets-dest './ios' --reset-cache",
+    "build:iosdev": "react-native bundle --entry-file './index.js' --platform 'ios' --dev=true --bundle-output './ios/main.jsbundle' --assets-dest './ios' --reset-cache",
+    "build:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res --reset-cache",
+    "build:androiddev": "react-native bundle --platform android --dev true --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res --reset-cache"
+  },
+  "dependencies": {
+    "@react-native-community/slider": "^2.0.8",
+    "buffer": "^5.4.3",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "~0.61.4",
+    "react-native-ble-plx": "^1.1.0",
+    "react-native-color-picker": "^0.4.4",
+    "react-native-gesture-handler": "~1.5.0",
+    "react-native-reanimated": "~1.4.0",
+    "react-native-screens": "~2.0.0-alpha.12",
+    "react-native-unimodules": "~0.7.0",
+    "react-native-web": "~0.11.7"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.6.0",
+    "@types/react": "~16.9.0",
+    "@types/react-native": "~0.60.23",
+    "babel-jest": "~24.9.0",
+    "babel-preset-expo": "^8.0.0",
+    "jest": "~24.9.0",
+    "jetifier": "~1.6.4",
+    "metro-react-native-babel-preset": "~0.56.0",
+    "react-test-renderer": "~16.9.0",
+    "typescript": "~3.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "private": true
+}
