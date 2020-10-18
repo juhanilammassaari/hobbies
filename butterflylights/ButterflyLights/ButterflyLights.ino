@@ -1,6 +1,8 @@
 #include "src/LedConfig.h"
 #include "src/LedIntensityLogic.h"
 
+#define POWER_SAVE_SLEEP_TIME_MS 15
+
 void setup() {
     Serial.begin(115200);
     Serial.println("Setting pins");
@@ -8,15 +10,9 @@ void setup() {
     configure_leds();
 }
 
-// the loop function runs over and over again forever
 void loop() {
-    set_led(100, 0, 0);
-    delay(1000);              // wait for a second
-    set_led(255, 0, 0);
-    delay(1000);              // wait for a second
-    set_led(0, 255, 0);
-    delay(1000);              // wait for a second
-    set_led(0, 0, 255);
-    delay(1000);              // wait for a second
+    unsigned long currentTime = millis();
+    update_leds(currentTime);
+    delay(POWER_SAVE_SLEEP_TIME_MS);
 }
 
