@@ -9,3 +9,7 @@ index.android.bundle
 local.properties
 **/xcuserdata/*
 **/node_modules/*
+**/.vs/*
+**/ButterflyLights/Debug/**/*
+**/ButterflyLights/Release/**/*
+**/ButterflyLights/__vm/*
