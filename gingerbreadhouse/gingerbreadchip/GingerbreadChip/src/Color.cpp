@@ -1,5 +1,9 @@
 #include "Color.h"
 
+/**
+* Constructor.
+* Initialize a color instance with black (all zeroes) color.
+*/
 Color::Color() 
 	:
 	red(0u),
@@ -8,6 +12,9 @@ Color::Color()
 {
 }
 
+/**
+* Destructor.
+*/
 Color::~Color() 
 {
 }

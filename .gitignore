@@ -13,3 +13,5 @@ local.properties
 **/ButterflyLights/Debug/**/*
 **/ButterflyLights/Release/**/*
 **/ButterflyLights/__vm/*
+/gingerbreadhouse/gingerbreadchip/GingerbreadChip/Debug/**/*
+/gingerbreadhouse/gingerbreadchip/GingerbreadChipTests/x64/Debug/**/*
